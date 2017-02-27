@@ -42,7 +42,7 @@ class homePage: UITabBarController,UITabBarControllerDelegate {
         
         
         views.frame = CGRect(x: 10, y: 10, width: self.view.frame.size.width/2, height: self.view.frame.size.height)
-        views.backgroundColor = UIColor.green
+        views.backgroundColor = UIColor.white
         self.view.addSubview(views)
         
         let home = UIButton()
@@ -50,7 +50,7 @@ class homePage: UITabBarController,UITabBarControllerDelegate {
             , height: 30)
         home.setTitle("home", for: .normal)
         home.addTarget(self, action: #selector(home(btn:)), for: .touchUpInside)
-        home.backgroundColor = UIColor.black
+        home.backgroundColor = UIColor.red
         
         view.addSubview(home)
        
@@ -58,14 +58,14 @@ class homePage: UITabBarController,UITabBarControllerDelegate {
         map.frame = CGRect(x: 0, y: 120, width: self.view.frame.width/2, height: 30)
         map.setTitle("mapview", for: .normal)
         map.addTarget(self, action: #selector(mapv(btn:)), for: .touchUpInside)
-        map.backgroundColor = UIColor.black
+        map.backgroundColor = UIColor.red
         view.addSubview(map)
         
         let costcal = UIButton()
         costcal.frame = CGRect(x: 0, y: 170, width: self.view.frame.width/2, height: 30)
         costcal.setTitle("costcalculator", for: .normal)
         costcal.addTarget(self, action: #selector(costcalc(btn:)), for: .touchUpInside)
-        costcal.backgroundColor = UIColor.black
+        costcal.backgroundColor = UIColor.red
         view.addSubview(costcal)
         
         
@@ -73,14 +73,14 @@ class homePage: UITabBarController,UITabBarControllerDelegate {
         profile.frame = CGRect(x: 0, y: 220, width: self.view.frame.width/2, height: 30)
         profile.setTitle("profile", for: .normal)
         profile.addTarget(self, action: #selector(prof(btn:)), for: .touchUpInside)
-        profile.backgroundColor = UIColor.black
+        profile.backgroundColor = UIColor.red
         view.addSubview(profile)
         
         let logout = UIButton()
         logout.frame = CGRect(x: 0, y: 270, width: self.view.frame.width/2, height: 30)
         logout.setTitle("logout", for: .normal)
         logout.addTarget(self, action: #selector(logout(btn:)), for: .touchUpInside)
-        logout.backgroundColor = UIColor.black
+        logout.backgroundColor = UIColor.red
         view.addSubview(logout)
        
       }
